@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv
+venv
+env
+ENV
+
+# IDE / Editor directories
+.vscode/
+.idea/
+
+# Data and Index directories
+faiss_index/
+mock_docs/
+
+# Log files
+*.log
+
+# Environment variables
+.env 

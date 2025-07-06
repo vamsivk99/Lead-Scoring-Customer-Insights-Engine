@@ -1,0 +1,13 @@
+langchain-openai
+python-dotenv
+langchain==0.2.1
+langchain-community==0.2.1
+huggingface-hub==0.23.3
+faiss-cpu
+streamlit
+transformers
+torch
+sentence-transformers
+accelerate
+bitsandbytes
+tqdm 
