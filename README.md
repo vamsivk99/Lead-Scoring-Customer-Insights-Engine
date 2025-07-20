@@ -9,7 +9,7 @@ This project implements a Retrieval-Augmented Generation (RAG) pipeline to score
 -   **RAG Pipeline**: Retrieves relevant documents and uses a language model to answer questions.
 -   **Lead Scoring**: Analyzes document content to score potential leads.
 
-## 🏛️ Architecture
+## Architecture
 
 The project follows a modular architecture, with distinct components for each stage of the pipeline.
 
@@ -22,7 +22,7 @@ graph TD;
     E --> F["RAG Pipeline <br/>(rag_pipeline.py)"];
     G["User Query"] --> F;
     F --> H["Lead Scoring <br/>(lead_scoring.py)"];
-    H --> I["✅ Scored Leads"];
+    H --> I["Scored Leads"];
 ```
 
 ## 🛠️ Setup & Usage
@@ -66,10 +66,10 @@ You can run the interactive lead scoring application:
 python app.py
 ```
 
-This will start a Gradio interface where you can ask questions about the documents to find and score leads.
+This will start a Streamlit interface where you can ask questions about the documents to find and score leads.
 
 ## ⚙️ Project Structure
-- `app.py`: The main Gradio application file.
+- `app.py`: The main Streamlit application file.
 - `requirements.txt`: A list of all the python dependencies.
 - `faiss_index/`: This directory will store the FAISS index.
 - `mock_docs/`: This directory will store the generated documents.
@@ -78,4 +78,4 @@ This will start a Gradio interface where you can ask questions about the documen
   - `preprocess.py`: A script to preprocess the generated documents before creating the vector store.
   - `create_vector_store.py`: A script to create a FAISS vector store from the preprocessed documents.
   - `rag_pipeline.py`: A script that defines the RAG pipeline for retrieving relevant documents.
-  - `lead_scoring.py`: A script to score leads based on the content of the documents. 
+  - `lead_scoring.py`: A script to score leads based on the content of the documents.

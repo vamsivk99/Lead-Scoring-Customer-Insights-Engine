@@ -3,16 +3,40 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
 # Virtual environment
 .venv
-venv
-env
-ENV
+venv/
+env/
+ENV/
+venv.bak/
+env.bak/
 
 # IDE / Editor directories
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
 # Data and Index directories
 faiss_index/
@@ -20,6 +44,12 @@ mock_docs/
 
 # Log files
 *.log
+logs/
 
 # Environment variables
-.env 
+.env
+.env.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
